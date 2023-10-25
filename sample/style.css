@@ -1,0 +1,598 @@
+@charset "UTF-8";
+:root {
+  --secondary-color: #bbb;
+}
+
+body {
+  background-color: #fff;
+  max-width: 800px;
+  margin: 5em auto 3em;
+  padding: 0 2em;
+  font-family: 思源黑体, "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body > footer {
+  font-family: Helvetica, sans-serif;
+  margin-top: 5em;
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 0.8em;
+}
+body > footer p {
+  line-height: 1.5;
+  margin: 0.2em;
+}
+body > footer a {
+  color: var(--secondary-color);
+}
+body > footer a:hover {
+  color: #777;
+}
+
+::selection {
+  background-color: #fffccc;
+}
+
+time {
+  color: var(--secondary-color);
+  font-family: Georgia;
+  display: block;
+  line-height: 1.2;
+  font-size: 0.9em;
+}
+
+header {
+  text-align: center;
+  width: 100%;
+}
+header .print-site-desc {
+  color: var(--secondary-color);
+}
+header .print-site-name {
+  color: var(--bs-black);
+}
+header.print-nav-index .print-site-name {
+  font-size: 2rem;
+}
+header.print-nav-index .print-site-name img {
+  height: 2rem;
+}
+header.print-nav-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+header.print-nav-page .print-site-name {
+  margin-bottom: 0.2em;
+}
+header.print-nav-page .print-nav-block-left {
+  text-align: left;
+}
+header.print-nav-page .print-site-desc {
+  font-size: 0.8em;
+}
+
+main {
+  margin-top: 2em;
+}
+
+.print-nav .list-inline-item a {
+  text-decoration: none;
+  color: #000;
+  border-bottom: 3px solid #eaeaea;
+}
+.print-nav .list-inline-item:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+/* .print-nav .list-inline-item:not(:last-child)::after{
+    content: "|";
+    margin: 0 1em;
+} */
+.print-article-group {
+  padding: 0;
+}
+.print-article-group article {
+  padding-bottom: 1em;
+  list-style: none;
+  line-height: 2em;
+}
+.print-article-group article .print-article-info {
+  display: block;
+  margin-bottom: 0.2em;
+}
+.print-article-group article h3 {
+  display: inline;
+  font-size: 1.4em;
+  line-height: 2;
+  font-weight: 500;
+  border-bottom: 3px solid #eaeaea;
+}
+.print-article-group article a {
+  text-decoration: none;
+  color: #000;
+}
+
+article {
+  font-family: "Punct Song Body", minion-pro, "Times New Roman", 思源宋体, "Noto Serif SC", "Songti SC", NSimSun, SimSun, serif;
+  font-size: 1.125rem;
+}
+article p {
+  line-height: 2;
+}
+article p code {
+  background-color: #f8f8f8;
+  padding: 0.1em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  margin: 0 0.2em;
+}
+article p strong,
+article p b {
+  font-weight: 500;
+  font-family: 思源黑体, "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+article p em,
+article p i {
+  font-style: normal;
+  font-family: "Lora", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+  font-size: 1.1em;
+}
+article h2,
+article h3,
+article h4,
+article h5 {
+  margin-bottom: 1em;
+  font-family: 思源黑体, "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+article h2 {
+  font-size: 1.6rem;
+  margin-top: 3em;
+}
+article h3 {
+  font-size: 1.5rem;
+}
+article h4 {
+  font-size: 1.4rem;
+}
+article h5 {
+  font-size: 1.3rem;
+}
+article blockquote {
+  color: #333;
+  border-left: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0.3em 0 0.5em 1.5em;
+  font-size: 1.1em;
+  font-family: "Lora", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+}
+article header {
+  margin-bottom: 1em;
+}
+article header h1 {
+  display: inline;
+  font-size: 1.8rem;
+  line-height: 2;
+  font-weight: 500;
+}
+article img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+article a {
+  color: #393f97;
+  text-decoration: none;
+  border-bottom: 3px solid rgba(187, 187, 187, 0.4);
+}
+article a.print-article-info {
+  border-bottom: none;
+}
+
+.print-header-sub {
+  opacity: 0.3;
+}
+
+.comment-author img.avatar {
+  height: 3em;
+  width: 3em;
+  border-radius: 1.5em;
+}
+.comment-author cite {
+  color: #5b5b5b;
+}
+.comment-author cite a {
+  color: #5b5b5b;
+}
+
+.comment-form a {
+  color: #5b5b5b;
+}
+
+a#cancel-comment-reply-link {
+  color: #5b5b5b;
+}
+
+.comment-meta .date {
+  margin-right: 1em;
+  color: var(--secondary-color);
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.comment-child {
+  border-left: 0.2em solid #dfdfdf;
+  margin-left: 1.3em;
+}
+
+article pre {
+  border-radius: 1em;
+}
+article pre code {
+  padding: 1em;
+  display: block;
+  background: #f9f9f9 !important;
+}
+
+/* NOTE: Copied and edited from Bootstrap */
+.pagination:first-child {
+  border-top-left-radius: var(--bs-pagination-border-radius);
+  border-bottom-left-radius: var(--bs-pagination-border-radius);
+}
+
+.pagination li {
+  position: relative;
+  display: block;
+  padding: var(--bs-pagination-padding-y) var(--bs-pagination-padding-x);
+  font-size: var(--bs-pagination-font-size);
+  color: var(--secondary-color);
+  text-decoration: none;
+  background-color: var(--bs-pagination-bg);
+  border: var(--bs-pagination-border-width) solid var(--bs-pagination-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.pagination li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+.pagination li.active {
+  z-index: 3;
+  color: var(--bs-pagination-active-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+.pagination li.active a {
+  color: var(--bs-pagination-active-color);
+}
+
+@media screen and (max-width: 768px) {
+  .print-nav-page {
+    flex-direction: column;
+  }
+  .print-nav-block-left {
+    text-align: right !important;
+    margin-left: auto;
+  }
+  .print-nav-block-right {
+    margin-left: auto;
+  }
+}
+.print-nav .list-inline-item a {
+  color: var(--secondary-color);
+}
+
+a.current {
+  border: none !important;
+  color: var(--bs-black) !important;
+  font-weight: 500;
+}
+
+.page-link > a {
+  text-decoration: none;
+}
+
+/* NOTE: Copied and edited from Typecho default */
+/* ------------------
+ * Comment list
+ * --------------- */
+#comments {
+  padding-top: 15px;
+}
+
+.comment-list,
+.comment-list ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.comment-list li {
+  padding: 2em;
+  margin-top: 10px;
+  border: 1px solid #EEE;
+}
+
+.comment-list li.comment-level-odd {
+  background: #F6F6F3;
+}
+
+.comment-list li.comment-level-even {
+  background: #FFF;
+}
+
+.comment-list li.comment-by-author {
+  background: #FFF9E8;
+}
+
+.comment-list li .comment-reply {
+  text-align: right;
+  font-size: 0.92857em;
+}
+
+.comment-meta a {
+  color: #999;
+  font-size: 0.92857em;
+}
+
+.comment-author {
+  display: block;
+  margin-bottom: 3px;
+  color: #444;
+}
+
+.comment-author .avatar {
+  float: left;
+  margin-right: 10px;
+}
+
+.comment-author cite {
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Comment reply */
+.comment-list .respond {
+  margin: 1em 0 4em;
+  border-top: 1px solid #EEE;
+}
+
+.respond .cancel-comment-reply {
+  float: right;
+  margin-top: 15px;
+  font-size: 0.92857em;
+}
+
+#comment-form label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+#comment-form .required:after {
+  content: " *";
+  color: #C00;
+}
+
+/* -----------------
+ * Content format
+ *--------------- */
+.comment-content {
+  line-height: 1.5;
+  word-wrap: break-word;
+  margin: 1em 0;
+}
+
+.post-content h2,
+.comment-content h2 {
+  font-size: 1.28571em;
+}
+
+.post-content img,
+.comment-content img,
+.post-content video,
+.comment-content video {
+  max-width: 100%;
+}
+
+.post-content a img,
+.comment-content a img {
+  background: #FFF;
+  position: relative;
+  bottom: -4px;
+  /* hidden img parent link border  */
+}
+
+.post-content hr,
+.comment-content hr {
+  margin: 2em auto;
+  width: 100px;
+  border: 1px solid #E9E9E9;
+  border-width: 2px 0 0 0;
+}
+
+/* NOTE: 借鉴 Hexo MemE 主题 */
+.print-article-meta {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  line-height: 2;
+  color: var(--secondary-color);
+  font-size: 0.9em;
+}
+.print-article-meta .print-article-tag,
+.print-article-meta .print-article-category {
+  max-width: 39%;
+}
+.print-article-meta .print-article-tag a,
+.print-article-meta .print-article-category a {
+  color: var(--secondary-color);
+}
+.print-article-meta .print-article-category {
+  max-width: 60%;
+}
+
+/* 借鉴 Tina */
+.alert a,
+h1,
+header a {
+  text-decoration: none;
+}
+
+.alert a,
+.comment-head,
+cite.fn {
+  font-weight: 700;
+}
+
+.alert {
+  margin: 1em 0;
+}
+
+.alert a {
+  border: 0;
+}
+
+.alert > p,
+.alert > ul {
+  margin-bottom: 0;
+}
+
+.alert > p + p {
+  margin-top: 5px;
+}
+
+.info {
+  color: #1d6fee;
+  border: 1px solid #1d6fee;
+  border-radius: 8px;
+}
+
+.comment-list p.comment-user-info {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.comment-author .avatar {
+  float: left;
+  margin-right: 1em;
+  border-radius: 15%;
+}
+
+.comment-body {
+  padding: 18px 0;
+  position: relative;
+  padding-inline: 18px;
+  box-shadow: var(--commentslist--color);
+}
+
+.comment-body p {
+  color: var(--comment-body-color);
+}
+
+.comment-body p:last-child {
+  margin-bottom: 0;
+}
+
+.comment-body .reply {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.comment-body .reply .comment-reply-link {
+  color: #fff;
+  font-family: exoregular;
+  display: inline-block;
+  line-height: 1.2;
+  border-radius: 3px;
+  padding: 3px 8px;
+  background-color: #bc403e;
+  font-size: 12px;
+}
+
+.comment-list {
+  word-wrap: break-word;
+}
+
+.comment-reply-title,
+.comments-title {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.44);
+  margin-bottom: 20px;
+}
+
+.comment-form label {
+  display: block;
+  font-size: 12px;
+  color: #999;
+}
+
+.comment-form input[type=text] {
+  line-height: 32px;
+  width: auto;
+  padding: 0 10px;
+}
+
+#comment,
+.comment-form input[type=text] {
+  border-radius: 8px;
+  background-color: var(--comment-background-color);
+  border: 1px solid #b5b5b5;
+  font-size: 14px;
+  width: 100%;
+  color: var(--font-color);
+}
+
+#comment {
+  resize: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.comment-form input[name=sum] {
+  max-width: 40px;
+}
+
+ol.comment-list {
+  padding-inline-start: 0;
+}
+
+p.areatype-1 {
+  float: left;
+  width: 32.3333333%;
+  margin-right: 1%;
+}
+
+p.areatype-2 {
+  float: left;
+  width: 33.3333333%;
+}
+
+.says {
+  display: none;
+}
+
+.comment-meta {
+  font-size: 14px;
+  color: var(--comment-meta);
+}
+
+.comments-pagination {
+  margin-bottom: 15px;
+}
+
+#submit {
+  background-color: var(--submit-color);
+  display: inline-block;
+  border: 1px solid #b5b5b5;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #999;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+#submit:hover {
+  border-color: #333;
+  color: #333;
+}
+
+/*# sourceMappingURL=style.css.map */
