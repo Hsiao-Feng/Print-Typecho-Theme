@@ -426,7 +426,7 @@ a.current {
   color: var(--secondary-color);
 }
 .print-article-meta .print-article-category {
-  max-width: 60%;
+  max-width: 50%;
 }
 
 /* 借鉴 Tina */
