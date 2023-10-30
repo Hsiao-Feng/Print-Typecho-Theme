@@ -134,8 +134,8 @@ article p b {
 article p em,
 article p i {
   font-style: normal;
-  font-family: "Lora", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
-  font-size: 1.1em;
+  font-family: "PT Serif", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+  font-size: 1em;
 }
 article h2,
 article h3,
@@ -162,8 +162,8 @@ article blockquote {
   border-left: 1px solid #ccc;
   margin: 1em 0;
   padding: 0.3em 0 0.5em 1.5em;
-  font-size: 1.1em;
-  font-family: "Lora", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+  font-size: 1em;
+  font-family: "PT Serif", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
 }
 article header {
   margin-bottom: 1em;
@@ -594,5 +594,3 @@ p.areatype-2 {
   border-color: #333;
   color: #333;
 }
-
-/*# sourceMappingURL=style.css.map */
