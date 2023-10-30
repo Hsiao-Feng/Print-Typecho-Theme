@@ -23,7 +23,7 @@ Print 是一款排印风格主题，适用于博客软件 Typecho 。该主题�
 
 ## 致谢
 
-外挂 [Google Fonts][7] 服务，其中西文斜体采用了 [Lora][8] 字体，中文正文使用[思源黑体][9]、[思源宋体][10]。
+外挂 [Google Fonts][7] 服务，其中西文斜体采用了 [PT Serif][8] 字体，中文正文使用[思源黑体][9]、[思源宋体][10]。
 
 主题样式有参考 [reuixiy][11] 设计的 Hugo 主题 [*MemE*][12]、钱争予的[魚缸 Eassy][13]。
 
@@ -43,7 +43,7 @@ Print 是一款排印风格主题，适用于博客软件 Typecho 。该主题�
   [5]: https://github.com/Hsiao-Feng/Print-Typecho-Theme/releases
   [6]: https://github.com/Hsiao-Feng/Print-Typecho-Theme/issues
   [7]: https://fonts.google.com
-  [8]: https://github.com/cyrealtype/Lora-Cyrillic
+  [8]: https://fonts.google.com/specimen/PT+Serif/about
   [9]: https://fonts.google.com/noto/specimen/Noto+Sans+SC/about?noto.query=Noto%20Sans%20SC
   [10]: https://fonts.google.com/noto/specimen/Noto+Serif+SC/about?noto.query=Noto%20Serif%20SC
   [11]: https://io-oi.me/
