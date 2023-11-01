@@ -3,7 +3,7 @@
 <?php $this->need('nav-page.php'); ?>
 
 <main>
-    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <article class="post mb-5" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
             <h1 itemprop="name headline"><?php $this->title() ?></h1>
             <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date(); ?></time>
