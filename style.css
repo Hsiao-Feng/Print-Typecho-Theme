@@ -133,8 +133,7 @@ article p b {
 }
 article p em,
 article p i {
-  font-style: normal;
-  font-family: "PT Serif", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+  font-family: "Punct Song Body", minion-pro, "Times New Roman", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
   font-size: 1em;
 }
 article h2,
@@ -163,7 +162,7 @@ article blockquote {
   margin: 1em 0;
   padding: 0.3em 0 0.5em 1.5em;
   font-size: 1em;
-  font-family: "PT Serif", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
+  font-family: "PT Serif", "Punct Song Body", minion-pro, "Times New Roman", Georgia, 楷体, 华文楷体, KaiTi, SCKaiti, "Noto Serif SC", serif;
 }
 article header {
   margin-bottom: 1em;
