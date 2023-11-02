@@ -20,10 +20,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <script>hljs.highlightAll();</script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Noto+Serif+SC:wght@400;500;700&family=PT+Serif:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
     <?php //if (!empty($this->options->addonFunction) && in_array('MathJax', $this->options->addonFunction)): ?>
     <script>
+        hljs.highlightAll();
         MathJax = {
         loader: {load: ["input/tex", "output/chtml"]},
         tex: {
@@ -38,6 +38,6 @@
         echo "\n";
         echo $this->options->header_code;
     ?>
-    
+
 </head>
 <body>
