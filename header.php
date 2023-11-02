@@ -11,6 +11,9 @@
         'tag'      => _t('标签 %s 下的文章'),
         'author'   => _t('%s 发布的文章')
     ], '', ' - '); ?><?php $this->options->title(); ?></title>
+    <meta property="og:site_name" content="<?php $this->options->title(); ?>" />
+    <meta property="og:title" content="<?php $this->archiveTitle('','','') ?? $this->options->title(); ?>" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -35,5 +38,6 @@
         echo "\n";
         echo $this->options->header_code;
     ?>
+    
 </head>
 <body>
