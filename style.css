@@ -426,6 +426,7 @@ a.current {
 }
 .print-article-meta .print-article-category {
   max-width: 50%;
+  text-align: right;
 }
 
 /* 借鉴 Tina */
