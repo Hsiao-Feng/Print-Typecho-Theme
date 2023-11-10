@@ -4,7 +4,7 @@
  *
  * @package Typecho Print Theme
  * @author Hsiao Feng
- * @version 1.1
+ * @version 1.2
  * @link https://hsiaofeng.com
  */
 
