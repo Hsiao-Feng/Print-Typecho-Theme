@@ -176,6 +176,7 @@ article header h1 {
 article img {
   max-width: 100%;
   margin: 0 auto;
+  display: block;
 }
 article a {
   color: #393f97;
@@ -631,3 +632,5 @@ p.areatype-2 {
   border-color: #333;
   color: #333;
 }
+
+/*# sourceMappingURL=style.css.map */
