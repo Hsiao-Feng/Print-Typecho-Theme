@@ -14,6 +14,16 @@ function themeConfig($form)
 
     $form->addInput($logoUrl);
 
+    $social_img_url = new \Typecho\Widget\Helper\Form\Element\Text(
+        'social_img_url',
+        null,
+        null,
+        _t('社交媒体图片地址'),
+        _t('在这里填入一个图片 URL 地址, 可以用于在社交媒体中连接预览时的图片展示。')
+    );
+
+    $form->addInput($social_img_url);
+
     /*
     $addonFunction = new \Typecho\Widget\Helper\Form\Element\Checkbox(
         'addonFunction',

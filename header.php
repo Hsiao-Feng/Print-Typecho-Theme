@@ -11,8 +11,22 @@
         'tag'      => _t('标签 %s 下的文章'),
         'author'   => _t('%s 发布的文章')
     ], '', ' - '); ?><?php $this->options->title(); ?></title>
+
+    <?php
+        $printDesc = $this->options->description;
+        if ($this->is('post') || $this->is('page')) {
+            $printDesc = $this->description;
+        }
+    ?>
+    
     <meta property="og:site_name" content="<?php $this->options->title(); ?>" />
+    <meta property="og:image" content="<?php $this->options->social_img_url() ?>" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="<?php $this->archiveTitle('','','') ?? $this->options->title(); ?>" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="<?php $this->archiveTitle('','','') ?? $this->options->title(); ?>">
+    <meta name="twitter:description" content="<?= $printDesc ?>">
+    <meta name="twitter:image" content="<?php $this->options->social_img_url() ?>">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
