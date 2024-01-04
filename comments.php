@@ -76,11 +76,9 @@ echo $commentClass;
                 <label for="textarea" class="required"><?php _e('内容'); ?></label>
                 <textarea rows="8" cols="50" name="text" id="comment" class="textarea" required ><?php $this->remember('text'); ?></textarea>
             </p>
-            <?php if ($this->options->TheVerification): ?>
-            <p style="float:left">
-                <?php spam_protection_math();?>
-            </p>
-            <?php endif; ?>
+            
+            <?= $this->options->comment_add_code; ?>
+
     		<p style="float:right">
                 <button type="reset" id="submit" class="submit"><?php _e('清空内容'); ?></button>
                 <button type="submit" id="submit" class="submit"><?php _e('提交评论'); ?></button>

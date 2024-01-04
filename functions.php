@@ -58,6 +58,17 @@ function themeConfig($form)
     );
 
     $form->addInput($html_footer_code);
+
+
+    $comment_add_code = new \Typecho\Widget\Helper\Form\Element\Textarea(
+        'comment_add_code',
+        null,
+        null,
+        _t('用户评论框和提交按钮之间的附加代码'),
+        _t('可以填入任意 HTML 内容，将被追加至评论框和提交按钮之间。')
+    );
+
+    $form->addInput($comment_add_code);
     
 }
 
