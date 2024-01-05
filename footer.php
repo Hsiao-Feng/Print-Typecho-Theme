@@ -11,6 +11,24 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.2.0/instantpage.min.js" integrity="sha512-p8l0Kir2Q2O+MWF/+qw2yM2LQQf0+m0AMD0EvGTFFL9vHquAXMRQKuyFBvHdTWpGEgIbXZxd9vjCRPUHeAhsOA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script>
+        function isChinese(temp) {
+            //from https://www.cnblogs.com/ys-wuhan/p/6502485.html
+            temp = temp.textContent;
+            var re=/[^\u4e00-\u9fa5]/;  
+            if(re.test(temp)) return false;  
+            return true;  
+        }  
+
+        const emTags = document.getElementsByTagName("em");
+
+        for(let emTag of emTags) {
+            if(isChinese(emTag)){
+                emTag.style.fontStyle = "normal";
+            }
+        }
+    </script>
+
     <?php
         $this->footer();
         echo "\n";
