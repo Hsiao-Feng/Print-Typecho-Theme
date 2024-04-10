@@ -127,7 +127,11 @@ article p code {
   margin: 0 0.2em;
 }
 article p strong,
-article p b {
+article p b,
+article li strong,
+article li b,
+article ul strong,
+article ul b {
   font-weight: 500;
   font-family: 思源黑体, "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
