@@ -131,7 +131,9 @@ article p b,
 article li strong,
 article li b,
 article ul strong,
-article ul b {
+article ul b,
+article ol strong,
+article ol b {
   font-weight: 500;
   font-family: 思源黑体, "Noto Sans SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
