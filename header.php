@@ -22,9 +22,9 @@
     <meta property="og:site_name" content="<?php $this->options->title(); ?>" />
     <meta property="og:image" content="<?php $this->options->social_img_url() ?>" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="<?php $this->archiveTitle('','','') ?? $this->options->title(); ?>" />
+    <meta property="og:title" content="<?php $this->archiveTitle('','','') ?>" />
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="<?php $this->archiveTitle('','','') ?? $this->options->title(); ?>">
+    <meta name="twitter:title" content="<?php $this->archiveTitle('','','') ?>">
     <meta name="twitter:description" content="<?= $printDesc ?>">
     <meta name="twitter:image" content="<?php $this->options->social_img_url() ?>">
 
